@@ -28,7 +28,7 @@ def new_tile(
     """Helper function for defining individual tile types
     """
 
-    return np.array((walkable, transparent, dark), dtype=tile_dt)
+    return np.array((walkable, transparent, dark, light), dtype=tile_dt)
 
 
 # SHROUD represents unexplored, unseen tiles
