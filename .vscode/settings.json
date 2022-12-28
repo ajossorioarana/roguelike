@@ -1,0 +1,11 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "yapf",
+    "editor.formatOnSave": true,
+    "git.autofetch": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.rulers": [
+        80
+    ],
+}
