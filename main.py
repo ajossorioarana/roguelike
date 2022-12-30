@@ -28,18 +28,10 @@ def main() -> None:
                     char='@',
                     color=(255, 255, 255))
 
-    npc = Entity(x=int(screen_width / 2 - 5),
-                 y=int(screen_height / 2),
-                 char='@',
-                 color=(255, 255, 0))
-
-    entities = {npc, player}
-
     game_map = generate_dungeon(max_rooms, room_min_size, room_max_size,
                                 map_width, map_height, player)
 
-    engine = Engine(entities=entities,
-                    event_handler=event_handler,
+    engine = Engine(event_handler=event_handler,
                     game_map=game_map,
                     player=player)
 
